@@ -1,0 +1,7 @@
+.btn {
+    @include fFS(12px, 30px, 420px, 1920px, 20px);
+    padding: 0.83333em 1.1333em;
+    &__hero  {
+background-color: $dark;
+    }
+}

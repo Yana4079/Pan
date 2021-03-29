@@ -1,0 +1,257 @@
+.hero {
+    background-image: url(../../img/hero/hero__bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 0 8.3333rem;
+    clip-path: polygon(0 0, 100% 0%, 100% 80%, 50% 100%, 0 80%);
+    @include bp(420px) {
+        background-image: url(../../img/hero/hero__bg--mob.png);
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 100% 100%, 0 90%);
+       }
+    &__img {
+        filter: drop-shadow(-2.41666em 3.20833em 0 $dark);
+        @include bp(420px) {
+           display: none;
+          }
+    }
+    &__header {
+        padding: 3.41666rem 0 1.4rem;
+        @include flex;
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        @include bp(420px) {
+            justify-content: center;
+            padding: 3.41666rem 0 9.333rem;
+           }
+    }
+    &__main {
+        font-family: 'Exo 2', sans-serif;
+        color: $text-wt;
+    }
+    &__menu {
+      max-width: 100px;
+      width: 100%;
+      &__line--white {
+width: 100%;
+height: 0.333rem;
+background-color: $text-wt;
+      }
+      &__line--blue {
+        width: 100%;
+        height: 0.333rem;
+        margin: 0.333rem -0.666rem 0.333rem;
+        background-color: $color-blue;
+              }
+              @include bp(420px) {
+                display: none;
+               }
+    }
+    &__navigation--desc { 
+        @include bp(420px) {
+            display: none;
+           }
+    }
+}
+.about {
+    margin-bottom: 4.70833rem;
+    &__inner {
+        position: relative;
+    border-bottom: 1px solid $section-border;
+    padding: 4.166rem 0;
+    }
+    &__text {
+        @include bp(420px) {
+            padding: 2.125rem 0 0;
+          }
+    }
+    &__features {
+        position: relative;
+        flex-wrap: nowrap;
+        padding: 1.5rem 0 0 2.5rem;
+        align-self: stretch;
+        z-index: 0;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            background-color: #00d4d4;
+            width: 100%;
+            height: 1.75rem;
+            z-index: -1;
+            top: 2.208rem;
+            left: 0.6rem;
+        }
+        @include bp(420px) {
+            padding: 1.5rem 0 0;
+          }
+    }
+    &__title {
+        position: relative;
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        padding: 1.9722em 0.333em;
+        margin-right: 100px;
+        color: $text-wt; 
+        background-color: $text;
+        z-index: 2;
+        @include bp(420px) {
+            writing-mode: initial;
+            transform: rotate(0);
+            padding: 0.333em 1.9722em;
+            margin: 0 auto;
+           }
+    }
+    &__subtitle {
+display: block;
+    }
+    &__text {
+        max-width: 680px;
+        width: 100%;
+    }
+}
+
+
+.features {
+    position: relative;
+    height: 100%;
+    @include flex-col;
+    &__icon {
+       max-height: 121px;
+      width: 100%;
+      @include bp(420px) {
+        max-height: 53px;
+       }
+    }
+    &__title {
+        padding: 0 0 1.416em;
+     font-weight: 700;
+     @include fFS(15px, 36px, 420px, 1920px, 72px);
+    }
+    + .features {
+        margin-left: auto;
+    }
+    
+}
+
+.features:nth-child(1) {
+    padding-right: 1.666em;
+}
+.features:nth-child(2) {
+    padding-right: 1.666em;
+}
+
+.portfolio {
+    
+    &__block {
+max-width: 380px;
+  vertical-align: top;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px #123;
+  &:hover .portfolio__block__hidden {
+    height: 130px;
+    padding: 5px;
+  }
+  &:hover .icon {
+    background-color: $text-wt;
+    opacity: 0.3;
+    @include bp(420px) {
+        width: 100%;
+       }
+}
+  &-icon {
+  position: relative;
+  line-height: 0; 
+  z-index: 0;
+
+  }
+  &__hidden { 
+    @include fFS(18px, 24px, 420px, 1920px, 24px);
+    width: 100%;
+    height: 0; /* за счет этого */
+    overflow: hidden; /* и этого */
+    transition: 0.3s linear;
+    position: absolute;
+    opacity: 0.8;
+    bottom: 0; /* прилипнет внизу */
+    background-color: $dark;
+    color: $text-wt;
+    box-sizing: border-box; /* не будет сюрпризов от padding */
+    padding: 0 19px;
+    z-index: 1;
+    &-title { 
+margin-bottom: 0.541em;
+font-weight: 700;
+line-height: 1;
+    }
+    &-text { 
+        margin-bottom: 0.541em;
+        font-weight: 700;
+        line-height: 1;
+        font-weight: 400;
+        line-height: 1em;
+            }
+  }
++ .portfolio__block {
+margin-left: 1.083rem;
+@include bp(420px) {
+    margin-left: 0;
+   }
+}
+    }
+    &__inner {  
+      text-align: center;
+      width: 88%;
+    }
+    &__works {
+padding-top: 1.9583rem;
+background: $bg-section-work;
+    transform: rotate(6.5deg);
+    padding-bottom: 4rem;
+    margin-bottom: 8.708rem;
+    left: -6%;
+    top: 4.708rem;
+    position: relative;
+    width: 115%;
+    } 
+    &__title {  
+        color: $dark; 
+        font-weight: 700;
+        background-color: $text-wt;
+        padding: 0.333em 1.9722em;
+        display: inline-block;
+        margin-bottom: 2.805em;
+    }
+    &__example { 
+        display: flex;
+        align-items: center;
+        &-link {  
+            align-self: center;
+            @include fFS(18px, 24px, 420px, 1920px, 24px);
+padding: 1.666em 2.583em;
+min-width: 300px;
+color: $text-wt; 
+        background-color: $text;
+        margin-right: 2.166em;
+        }
+    }
+    &__article { 
+        padding-top: 1.9583rem;
+        background: $bg-section-work;
+            padding-bottom: 4rem;
+            transform: rotate(-6.5deg);
+            width: 115%;
+            position: relative;
+            right: 6%;
+    }  
+}
+
+.icon {
+    text-align: center;
+    font-size: 18px;
+    transition: 0.3s linear; 
+
+}
