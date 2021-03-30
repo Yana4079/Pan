@@ -1,8 +1,8 @@
 html {
     font-family: $ff;
      color: $text;
-    @include fFS(12px, 24px, 420px, 1920px, 24px);
-     line-height: 1,5;
+    @include fFS(18px, 18x, 480px, 1920px, 18px);
+     line-height: 1,2;
     }
     
     body {
@@ -32,27 +32,19 @@ html {
       position: relative;
       min-width: 320px;
       margin: 0 auto;
-      padding: 0 4.1666rem;
+      padding: 0 17.24%;
       z-index: 1;
       @include bp(420px) {
-        padding: 0 1.0833rem;
+        padding: 0 2.111rem;
       }
     }
-    .title {
-      @include fFS(24px, 36px, 420px, 1920px, 36px);
-      font-weight: 800;
-text-transform: uppercase;
-    }
+ 
     
     img {
     display: inline-block;
     max-width: 100%;
     }
-    .hero__logo img {
-      @include bp(420px) {
-        max-width: 70%;
-      }
-    }
+
     
     /*helpers*/
     
@@ -60,50 +52,76 @@ text-transform: uppercase;
      text-align: center;
     }
     
-    .light {
-      // color: $light;
-    }
-    
-    .accent {
-      // color: $accent;
-    }
-    
-    .medium {
-      color: #8c8c8ce7;
-    }
+   
     
     /*typografy*/
     .section__title {
-      @include fFS(28px, 72px, 420px, 1920px, 72px);
-      margin-bottom: 1.5em;
-      font-weight: 900;
-      line-height: 1.25em;
-      span {
-        color: $color-blue;
+      @include fFS(23px, 43px, 490px, 600px, 43px);
+      font-weight: 700;
+      line-height: 1.046em;
+      @include bp(480px) {
+        color: $text-wt;
       }
     }
-    .section__title--min {
-      @include fFS(28px, 45px, 420px, 1920px, 45px);
-      margin-bottom: 1.5em;
-      font-weight: bold;
-    }
+  
     .section__subtitle {
-      @include fFS(12px, 30px, 420px, 1920px, 30px);
-      font-weight: 500;
+      @include fFS(18px, 18px, 480px, 1920px, 18px);
+      font-weight: 700;
+      line-height: 1.22em;
+    }
+    .instruction__text {
+      font-weight: 400;
+      @include fFS(18px, 18px, 480px, 1920px, 18px);
+      @include bp(480px) {
+        color: $text-wt;
+        font-weight: 700;
+      }
+    }
+     .reviews__text {
+      @include fFS(21px, 21px, 480px, 1920px, 21px);
+      font-weight: 400;
+    }
+    .btn__text {
+      @include fFS(27px, 27px, 480px, 1920px, 27px);
+      font-weight: 700;
+      text-transform: uppercase;
+      display: inline-block;
+      color: $text-wt;
       line-height: 1em;
     }
-    p {
-      line-height: 1.5;
-      @include bp(420px) {
-        font-size: 12px;
-      }
+    .counter__text {
+      @include fFS(18px, 18px, 480px, 1920px, 18px);
+      font-weight: 700;
+      color: $color-counter-text;
+      line-height: 1.333em;
     }
+    .price__before-text {
+      @include fFS(38px, 38px, 480px, 1920px, 38px);
+      font-weight: 500;
+      color: $text;
+      line-height: 1em;
+    }
+
+    .price__after-text {
+      @include fFS(38px, 38px, 480px, 1920px, 38px);
+      font-weight: 700;
+      color: $text-wt;
+      line-height: 1em;
+    }
+    .smile__text {
+      @include fFS(18px, 18px, 480px, 1920px, 18px);
+      font-weight: 400;
+      color: $text;
+      line-height: 1.333em;
+      display: inline-block;
+    }
+ 
     
     .row {
       @include flex;
       &--rewerse {
         flex-direction: row-reverse;
-        @include bp(420px) {
+        @include bp(480px) {
           flex-direction: row;
         }
       }
@@ -114,29 +132,20 @@ text-transform: uppercase;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      min-height: 141px;
-      flex: 0 1 42%;
-      &-text  {
-        max-width: 642px;
-        min-width: 250px;
-        @include bp(420px) {
-          max-width: 250px;
-          margin: 0 auto;
-        }
-      }
-      @include bp(420px) {
+      flex: 0 1 50%;
+         @include bp(768px) {
         flex: 1 1 100% !important;
         min-height: auto;
       }
       &-right {
         margin-left: auto;
-       @include bp(420px) {
+       @include bp(480px) {
           margin: 0 auto;
         }  
       }
       &-left {
         margin-right: auto;
-        @include bp(420px) {
+        @include bp(480px) {
           margin: 0 auto;
         }
       }
@@ -145,7 +154,7 @@ text-transform: uppercase;
         top: 0;
         width: 100%;
         height: 100%;
-        @include bp(420px) {
+        @include bp(480px) {
           position: relative;
           margin-bottom: 30px;
         }
@@ -154,21 +163,21 @@ text-transform: uppercase;
           margin: 0 auto;
           height: 100%;
           object-fit: contain;
-         @include bp(420px) { 
+         @include bp(480px) { 
            height: auto;
          }
         }
         &.left {
           margin-right: auto;
           right: 108%;
-          @include bp(420px) {
+          @include bp(480px) {
           right: auto;
         }
         }
         &.right {
           margin-left: auto;
           left: 108%;
-          @include bp(420px) {
+          @include bp(480px) {
           left: auto;
         }
         }
@@ -177,7 +186,7 @@ text-transform: uppercase;
        display: flex;
        align-items: center;
        flex: 0 1 50%;
-       @include bp(420px) {
+       @include bp(480px) {
         flex: 1 1 100% !important;
         flex-wrap: wrap;
         min-height: auto;
