@@ -30,11 +30,10 @@ html {
     
     .container {
       position: relative;
-      min-width: 320px;
       margin: 0 auto;
-      padding: 0 17.24%;
+      max-width: 1285px;
       z-index: 1;
-      @include bp(420px) {
+      @include bp(768px) {
         padding: 0 2.111rem;
       }
     }
@@ -81,8 +80,9 @@ html {
     }
     .instruction__text {
       font-weight: 400;
+      text-align: center;
       @include fFS(18px, 18px, 480px, 1920px, 18px);
-      @include bp(480px) {
+      @include bp(768px) {
         color: $text-wt;
         font-weight: 700;
       }
@@ -154,6 +154,7 @@ html {
 margin-left: 2%;
        flex: 0 1 45%;
        @include bp(768px) {
+        margin-left: 0;
         flex: 1 1 100% !important;
         flex-wrap: wrap;
         min-height: auto;
@@ -161,6 +162,19 @@ margin-left: 2%;
      }
      &-60 {
        flex: 0 1 53%;
+       
+       @include bp(768px) {
+        flex: 1 1 100% !important;
+        flex-wrap: wrap;
+        min-height: auto;
+      }
+     }
+     &-instruction {
+      display: flex;
+      flex-wrap: wrap;
+justify-content: center;
+       flex: 0 1 53%;
+       
        @include bp(768px) {
         flex: 1 1 100% !important;
         flex-wrap: wrap;

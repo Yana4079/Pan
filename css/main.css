@@ -364,11 +364,10 @@ a {
 
 .container {
   position: relative;
-  min-width: 320px;
   margin: 0 auto;
-  padding: 0 17.24%;
+  max-width: 1285px;
   z-index: 1; }
-  @media (max-width: 420px) {
+  @media (max-width: 768px) {
     .container {
       padding: 0 2.111rem; } }
 
@@ -426,6 +425,7 @@ img {
 
 .instruction__text {
   font-weight: 400;
+  text-align: center;
   font-size: 18px; }
   @media (min-width: 480px) {
     .instruction__text {
@@ -434,7 +434,7 @@ img {
   @media (min-width: 1920px) {
     .instruction__text {
       font-size: 18px; } }
-  @media (max-width: 480px) {
+  @media (max-width: 768px) {
     .instruction__text {
       color: #fff;
       font-weight: 700; } }
@@ -567,6 +567,7 @@ img {
     flex: 0 1 45%; }
     @media (max-width: 768px) {
       .col-40 {
+        margin-left: 0;
         -webkit-box-flex: 1 !important;
         -ms-flex: 1 1 100% !important;
         flex: 1 1 100% !important;
@@ -579,6 +580,26 @@ img {
     flex: 0 1 53%; }
     @media (max-width: 768px) {
       .col-60 {
+        -webkit-box-flex: 1 !important;
+        -ms-flex: 1 1 100% !important;
+        flex: 1 1 100% !important;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        min-height: auto; } }
+  .col-instruction {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 53%;
+    flex: 0 1 53%; }
+    @media (max-width: 768px) {
+      .col-instruction {
         -webkit-box-flex: 1 !important;
         -ms-flex: 1 1 100% !important;
         flex: 1 1 100% !important;
@@ -700,8 +721,7 @@ img {
 
 .before-textsmall {
   font-size: 16px;
-  font-weight: 500;
-  text-align: start; }
+  font-weight: 500; }
   @media (min-width: 490px) {
     .before-textsmall {
       font-size: 18px;
@@ -712,8 +732,7 @@ img {
 
 .before-textBig {
   font-size: 24px;
-  font-weight: 700;
-  text-align: start; }
+  font-weight: 700; }
   @media (min-width: 490px) {
     .before-textBig {
       font-size: 38px;
@@ -864,4 +883,28 @@ img {
       max-height: 89px; } }
 
 .holiday__inner {
-  max-width: 546px; }
+  width: 100%; }
+
+.instruction {
+  background-image: url(../../img/instruction__bg-dev.png);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: right center;
+  padding-bottom: 56.268px;
+  padding-bottom: 3.126rem; }
+  @media (max-width: 768px) {
+    .instruction {
+      background-image: url(../../img/instruction__bg-mob.png);
+      background-position: bottom; } }
+
+.instruction__box {
+  text-align: center; }
+
+.instruction__box + .instruction__box {
+  margin-top: 31.266px;
+  margin-top: 1.737rem; }
+
+.instruction__title {
+  max-width: 412px;
+  width: 100%;
+  margin-bottom: 1.534em; }

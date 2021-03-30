@@ -99,13 +99,13 @@ padding: 21px 0;
 .before-textsmall {
     @include fFS(16px, 18px, 490px, 600px, 18px);
 font-weight: 500;
-text-align: start;
+
 }
 
 .before-textBig {
     @include fFS(24px, 38px, 490px, 600px, 38px);
     font-weight: 700;
-    text-align: start;
+
 }
 
 .after-textsmall {
@@ -240,7 +240,31 @@ max-height: 89px;
           }
 }
 .holiday__inner {
-    max-width: 546px;
-    
+    // max-width: 546px;
+    width: 100%;
+}
+
+.instruction {
+    background-image: url(../../img/instruction__bg-dev.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: right center;
+    padding-bottom: 3.126rem;
+   @include bp(768px) {
+    background-image: url(../../img/instruction__bg-mob.png);
+        background-position: bottom;
+      }
+}
+
+.instruction__box {
+    text-align: center;
+}
+.instruction__box +  .instruction__box {
+   margin-top: 1.737rem;
+}
+.instruction__title {
+    max-width: 412px;
+    width: 100%;
+    margin-bottom: 1.534em;
 }
 
