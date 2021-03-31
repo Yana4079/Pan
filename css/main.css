@@ -706,7 +706,7 @@ img {
   background-image: url(../../img/hero__pancake.png), url(../../img/ero__bg.png);
   background-repeat: no-repeat;
   background-size: 27% auto, auto;
-  background-position: left 87%, center center; }
+  background-position: left 71%, center center; }
   @media (max-width: 768px) {
     .hero {
       background-image: url(../../img/ero__bg.png);
@@ -736,7 +736,9 @@ img {
     -ms-flex-pack: center;
     justify-content: center;
     padding-bottom: 180px;
-    padding-bottom: 10rem; }
+    padding-bottom: 10rem;
+    margin-left: -144px;
+    margin-left: -8rem; }
     .hero__block-img {
       -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
@@ -1031,10 +1033,13 @@ img {
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center; }
+    justify-content: center;
+    margin-top: -162px;
+    margin-top: -9rem; }
     @media (max-width: 768px) {
       .video__inner {
-        padding: 0 0 3.277rem; } }
+        padding: 0 0 3.277rem;
+        margin-top: 0; } }
     .video__inner img {
       width: 56%; }
       @media (max-width: 768px) {
@@ -1228,10 +1233,6 @@ img {
 .params__name {
   color: #848484; }
 
-@media (max-width: 768px) {
-  .params__btn {
-    display: none; } }
-
 .params__value-uppercase {
   font-size: 18px;
   font-size: 1rem;
@@ -1253,6 +1254,10 @@ img {
     max-width: 592px;
     margin: 0  auto 0.953em;
     text-transform: uppercase; }
+
+.params__btn {
+  font-size: 22px;
+  width: 100%; }
 
 .description__image-desc {
   max-width: 623px;
@@ -1466,7 +1471,9 @@ img {
   -ms-flex-pack: center;
   justify-content: center;
   padding-bottom: 180px;
-  padding-bottom: 10rem; }
+  padding-bottom: 10rem;
+  margin-left: -144px;
+  margin-left: -8rem; }
   @media (max-width: 768px) {
     .hero__block-footer {
       margin-left: 0;
@@ -1474,7 +1481,8 @@ img {
       margin-left: 0;
       -webkit-box-pack: start;
       -ms-flex-pack: start;
-      justify-content: flex-start; } }
+      justify-content: flex-start;
+      margin-left: 0; } }
 
 .hero-footer {
   background-image: url(../../img/hero__pancake.png), url(../../img/ero__bg.png);
@@ -1493,8 +1501,8 @@ img {
       background-position: center top; } }
 
 footer {
-  margin-bottom: 18px;
-  margin-bottom: 1rem; }
+  margin: 18px 0;
+  margin: 1rem 0; }
 
 .footer__block {
   font-size: 0.8em;

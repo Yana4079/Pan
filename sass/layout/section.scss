@@ -1,8 +1,8 @@
 .hero {
-    background-image:  url(../../img/hero__pancake.png), url(../../img/ero__bg.png);
+    background-image: url(../../img/hero__pancake.png), url(../../img/ero__bg.png);
     background-repeat: no-repeat;
-    background-size:  27% auto, auto;
-    background-position: left 87%, center center;
+    background-size: 27% auto, auto;
+    background-position: left 71%, center center;
     @include bp(768px) {
         background-image: url(../../img/ero__bg.png);
         background-size: 100%;
@@ -28,6 +28,7 @@ padding: 0.53em 0 0.65em;
         flex-wrap: wrap;
         justify-content: center;
         padding-bottom: 10rem;
+        margin-left: -8rem;
         &-img { 
             flex: 0 1 50%;
             position: relative;
@@ -261,8 +262,10 @@ color: $text-wt;
         padding: 12.333rem 0 6.277rem;
         display: flex;
         justify-content: center;
+        margin-top: -9rem;
         @include bp(768px) {
             padding: 0 0 3.277rem;
+            margin-top: 0;
           }
         img {
             width: 56%;
@@ -473,11 +476,7 @@ font-weight: 400;
     &__name {
 color: $param-name;
     }
-    &__btn {
-        @include bp (768px) {
-         display: none;
-                  }
-            }
+   
 }
 .params__value-uppercase {
     font-size: 1rem;
@@ -496,6 +495,10 @@ color: $param-name;
         margin: 0  auto 0.953em;
         text-transform: uppercase;
     }
+}
+.params__btn {
+    font-size: 22px;
+    width: 100%;
 }
 
 .description__image-desc {
@@ -692,11 +695,13 @@ height: 55px;
         flex-wrap: wrap;
         justify-content: center;
         padding-bottom: 10rem;
+        margin-left: -8rem;
     @include bp(768px) {
         margin-left: 0;
         padding-bottom: 0;
         margin-left: 0;
         justify-content: flex-start;
+        margin-left: 0;
       }  
       @include bp(480px) {
       
@@ -720,5 +725,5 @@ height: 55px;
       }
     }
     footer {
-        margin-bottom: 1rem;
+        margin: 1rem 0;
     }
