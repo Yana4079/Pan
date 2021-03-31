@@ -456,7 +456,9 @@ img {
 .instruction__text {
   font-weight: 400;
   text-align: center;
-  font-size: 18px; }
+  font-size: 18px;
+  margin-top: 9px;
+  margin-top: 0.5rem; }
   @media (min-width: 480px) {
     .instruction__text {
       font-size: 18px;
@@ -696,7 +698,9 @@ img {
         flex: 1 1 100% !important;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        min-height: auto; } }
+        min-height: auto;
+        padding-top: 100px;
+        padding-bottom: 100px; } }
 
 .hero {
   background-image: url(../../img/hero__pancake.png), url(../../img/ero__bg.png);
@@ -755,7 +759,7 @@ img {
     .sale {
       left: 0;
       right: 11%;
-      bottom: -127%;
+      bottom: -104%;
       z-index: 3; } }
 
 .sale-footer {
@@ -765,7 +769,7 @@ img {
       display: block;
       position: absolute;
       right: -11%;
-      bottom: -120%;
+      bottom: -103%;
       left: 0; } }
 
 .hero__title-mob {
@@ -856,7 +860,7 @@ img {
   height: 37px; }
 
 .smile__box {
-  margin-top: 14.24px; }
+  margin-top: -25px; }
 
 .promo__smile + .promo__smile {
   margin-top: 8px; }
@@ -911,7 +915,8 @@ img {
 
 .before-textBig {
   font-size: 24px;
-  font-weight: 700; }
+  font-weight: 700;
+  text-decoration: line-through; }
   @media (min-width: 490px) {
     .before-textBig {
       font-size: 38px;
@@ -1101,7 +1106,7 @@ img {
       background-image: url(../../img/instruction__bg-mob.png);
       background-position: bottom;
       background-size: 100% 100%;
-      margin-bottom: 7.166rem; } }
+      margin-bottom: 5.166rem; } }
 
 .instruction__box {
   text-align: center; }
@@ -1117,23 +1122,39 @@ img {
 .instruction__title {
   max-width: 412px;
   width: 100%;
-  margin-bottom: 1.534em;
+  margin: 0 auto 1.534em;
   z-index: 1; }
+  @media (max-width: 768px) {
+    .instruction__title {
+      margin: 0 auto; } }
 
 .instruction__smile {
   position: absolute;
-  left: 39%;
-  top: -8%;
-  z-index: 0; }
+  left: 666px;
+  left: 37rem;
+  top: -102px;
+  z-index: -1; }
+  @media (max-width: 1700px) {
+    .instruction__smile {
+      left: 26rem; } }
+  @media (max-width: 785px) {
+    .instruction__smile {
+      left: 5.5rem;
+      top: -3rem;
+      width: 88px;
+      height: 88px; } }
   @media (max-width: 480px) {
     .instruction__smile {
-      left: 2%;
-      top: -5%;
+      left: 0.5rem;
+      top: -4rem;
       width: 88px;
       height: 88px; } }
 
 .smile__content {
   position: relative; }
+  .smile__content-instruction {
+    margin-top: 54px;
+    margin-top: 3rem; }
 
 .smile__description {
   position: absolute;
@@ -1143,38 +1164,44 @@ img {
   z-index: -1;
   width: 131px;
   height: 131px; }
+  @media (max-width: 785px) {
+    .smile__description {
+      top: -3rem;
+      left: -25px;
+      width: 88px;
+      height: 88px; } }
   @media (max-width: 480px) {
     .smile__description {
-      top: -245%;
-      left: -25px; } }
-  @media (max-width: 380px) {
-    .smile__description {
-      top: -162%;
-      left: -25px; } }
+      top: -4rem;
+      left: -30px; } }
 
 .smile__review {
   position: absolute;
   right: 20%;
   top: -83px;
   z-index: -1; }
-  @media (max-width: 480px) {
+  @media (max-width: 785px) {
     .smile__review {
       width: 88px;
       height: 88px;
-      right: 62%;
-      top: -62px; } }
+      left: -2rem;
+      top: -54px; } }
+  @media (max-width: 480px) {
+    .smile__review {
+      left: 2rem;
+      top: -54px; } }
 
 .smile__order {
   position: absolute;
   top: -211%;
   left: 30%;
   z-index: -1; }
-  @media (max-width: 480px) {
+  @media (max-width: 785px) {
     .smile__order {
-      width: 131px;
-      height: 131px;
-      left: -2%;
-      top: -460%; } }
+      width: 88px;
+      height: 88px;
+      left: 0;
+      top: -67px; } }
 
 .params__value {
   font-size: 18px;
@@ -1358,6 +1385,10 @@ img {
     filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="6" /></filter></svg>#filter');
     filter: blur(6px); }
 
+.review__content + .review__content {
+  margin-top: 9px;
+  margin-top: 0.5rem; }
+
 .order {
   background-image: url(../../img/order__bg.png);
   background-repeat: no-repeat;
@@ -1365,7 +1396,7 @@ img {
   background-position: center; }
   @media (max-width: 768px) {
     .order {
-      margin-top: 7rem; } }
+      margin-top: 5rem; } }
   .order__container {
     padding-bottom: 52.992px;
     padding-bottom: 2.944rem; }

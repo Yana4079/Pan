@@ -52,7 +52,7 @@ padding: 0.53em 0 0.65em;
     @include bp(768px) {
         left: 0;
         right: 11%;
-        bottom: -127%;
+        bottom: -104%;
         z-index: 3;
       }
 }
@@ -63,7 +63,7 @@ padding: 0.53em 0 0.65em;
         display: block;
     position: absolute;
     right: -11%;
-    bottom: -120%;
+    bottom: -103%;
     left: 0;
     }
 }
@@ -135,7 +135,7 @@ margin: 0 auto;
     }
 
     .smile__box {
-        margin-top:14.24px; 
+        margin-top:-25px; 
     }
     .promo__smile + .promo__smile {
         margin-top: 8px;
@@ -179,7 +179,7 @@ font-weight: 500;
 .before-textBig {
     @include fFS(24px, 38px, 490px, 600px, 38px);
     font-weight: 700;
-
+text-decoration: line-through;
 }
 
 .after-textsmall {
@@ -337,6 +337,7 @@ max-width: 89px;
 max-height: 89px;
 margin-top: 0;
           }
+          
 }
 .holiday__inner {
     // max-width: 546px;
@@ -354,7 +355,7 @@ margin-top: 0;
     background-image: url(../../img/instruction__bg-mob.png);
         background-position: bottom;
         background-size: 100% 100%;
-        margin-bottom: 7.166rem;
+        margin-bottom: 5.166rem;
       }
 }
 
@@ -373,24 +374,39 @@ margin-top: 0;
 .instruction__title {
     max-width: 412px;
     width: 100%;
-    margin-bottom: 1.534em;
+    margin: 0 auto 1.534em;
     z-index: 1;
+    @include bp(768px) {
+        margin: 0 auto;
+                  }
 }
 .instruction__smile {
-position: absolute;
-left: 39%;
-top: -8%;
-z-index: 0;
-@include bp(480px) {
-    left: 2%;
-    top: -5%;
+    position: absolute;
+    left: 37rem;
+    top: -102px;
+    z-index: -1;
+    @include bp(1700px) {
+        left: 26rem;
+                  }
+@include bp(785px) {
+    left: 5.5rem;
+    top: -3rem;
     width: 88px;
     height: 88px;
               }
+              @include bp(480px) {
+                left: 0.5rem;
+    top: -4rem;
+    width: 88px;
+    height: 88px;
+                          }
 }
 
 .smile__content {
     position: relative;
+    &-instruction {
+        margin-top: 3rem;
+    }
 }
 .smile__description {
     position: absolute;
@@ -400,13 +416,15 @@ z-index: 0;
     z-index: -1;
     width: 131px;
     height: 131px;
-    @include bp(480px) {
-        top: -245%;
+    @include bp(785px) {
+        top: -3rem;
         left: -25px;
+        width: 88px;
+        height: 88px;
                   }
-                  @include bp(380px) {
-                    top: -162%;
-                    left: -25px;
+                  @include bp(480px) {
+                    top: -4rem;
+                    left: -30px;
                               }
 }
 .smile__review {
@@ -414,12 +432,16 @@ z-index: 0;
     right: 20%;
     top: -83px;
     z-index: -1;
-    @include bp(480px) {
+    @include bp(785px) {
         width: 88px;
     height: 88px;
-    right: 62%;
-    top: -62px;
+    left: -2rem;
+    top: -54px;
                   }
+                  @include bp(480px) {
+                    left: 2rem;
+    top: -54px;
+                              }
 }
 
 .smile__order {
@@ -427,11 +449,11 @@ position: absolute;
 top: -211%;
     left: 30%;
     z-index: -1;
-    @include bp(480px) {
-width: 131px;
-height: 131px;
-left: -2%;
-top: -460%;
+    @include bp(785px) {
+        width: 88px;
+        height: 88px;
+        left: 0;
+        top: -67px;
                   }
 }
 
@@ -544,6 +566,7 @@ img {
         margin-top: -7rem;
         margin-bottom:2rem;
                   }
+                          
     &__title {
      max-width: 578px;
      margin: 0 auto 2rem;
@@ -604,14 +627,16 @@ line-height: 1.333rem;
         }
 }
 
-
+.review__content + .review__content {
+    margin-top: 0.5rem;
+}
 .order {
     background-image: url(../../img/order__bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     @include bp (768px) {
-        margin-top: 7rem;
+        margin-top: 5rem;
                   }
     &__container {
 padding-bottom: 2.944rem;
