@@ -1,12 +1,15 @@
 .hero {
     background-image:  url(../../img/hero__pancake.png), url(../../img/ero__bg.png);
     background-repeat: no-repeat;
-    background-size:  27% auto, 100% ;
+    background-size:  27% auto, auto;
     background-position: left 87%, center center;
     @include bp(768px) {
-        background-image: url(../../img/hero__bg-mob.png);
+        background-image: url(../../img/ero__bg.png);
         background-size: 100%;
         background-position: center top;
+      }
+    @include bp(480px) {
+        background-image: url(../../img/hero__bg-mob.png);
       }
     &__title {
 max-width: 590px;
@@ -58,7 +61,7 @@ padding: 0.53em 0 0.65em;
 
 .sale-footer {
     display: none;
-    @include bp(480px) {
+    @include bp(785px) {
         display: block;
     position: absolute;
     right: -11%;
@@ -69,6 +72,8 @@ padding: 0.53em 0 0.65em;
 
 .hero__title-mob {
     display: none;
+    background: $bg-price;
+    color: $text-wt;
     @include bp(768px) {
         display: block;
         padding: 1rem 0;
@@ -701,9 +706,14 @@ height: 55px;
 .hero-footer {
     background-image: url(../../img/hero__pancake.png), url(../../img/ero__bg.png);
     background-repeat: no-repeat;
-    background-size: 27% auto, 100% ;
+    background-size: 27% auto, auto;
     background-position: left bottom, center top;
     @include bp(768px) {
+        background-image: url(../../img/ero__bg.png);
+        background-size: 100%;
+        background-position: center top;
+      }
+    @include bp(480px) {
         background-image: url(../../img/hero__bg-mob.png);
         background-size: 100%;
         background-position: center top;

@@ -705,13 +705,16 @@ img {
 .hero {
   background-image: url(../../img/hero__pancake.png), url(../../img/ero__bg.png);
   background-repeat: no-repeat;
-  background-size: 27% auto, 100%;
+  background-size: 27% auto, auto;
   background-position: left 87%, center center; }
   @media (max-width: 768px) {
     .hero {
-      background-image: url(../../img/hero__bg-mob.png);
+      background-image: url(../../img/ero__bg.png);
       background-size: 100%;
       background-position: center top; } }
+  @media (max-width: 480px) {
+    .hero {
+      background-image: url(../../img/hero__bg-mob.png); } }
   .hero__title {
     max-width: 590px;
     width: 100%;
@@ -768,7 +771,7 @@ img {
 
 .sale-footer {
   display: none; }
-  @media (max-width: 480px) {
+  @media (max-width: 785px) {
     .sale-footer {
       display: block;
       position: absolute;
@@ -777,7 +780,10 @@ img {
       left: 0; } }
 
 .hero__title-mob {
-  display: none; }
+  display: none;
+  background: -webkit-gradient(linear, right top, left top, from(#009959), color-stop(122.54%, #05FF00));
+  background: linear-gradient(270deg, #009959 0%, #05FF00 122.54%);
+  color: #fff; }
   @media (max-width: 768px) {
     .hero__title-mob {
       display: block;
@@ -1473,9 +1479,14 @@ img {
 .hero-footer {
   background-image: url(../../img/hero__pancake.png), url(../../img/ero__bg.png);
   background-repeat: no-repeat;
-  background-size: 27% auto, 100%;
+  background-size: 27% auto, auto;
   background-position: left bottom, center top; }
   @media (max-width: 768px) {
+    .hero-footer {
+      background-image: url(../../img/ero__bg.png);
+      background-size: 100%;
+      background-position: center top; } }
+  @media (max-width: 480px) {
     .hero-footer {
       background-image: url(../../img/hero__bg-mob.png);
       background-size: 100%;
