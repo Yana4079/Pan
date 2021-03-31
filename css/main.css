@@ -699,13 +699,13 @@ img {
         min-height: auto; } }
 
 .hero {
-  background-image: url(../../img/hero__pancake.png), url(../../img/ero__bg.png);
+  background-image: url(../img/hero__pancake.png), url(../img/ero__bg.png);
   background-repeat: no-repeat;
   background-size: 27% auto, auto;
   background-position: left 87%, center top; }
   @media (max-width: 768px) {
     .hero {
-      background-image: url(../../img/hero__bg-mob.png);
+      background-image: url(../img/hero__bg-mob.png);
       background-size: 100%;
       background-position: center top; } }
   .hero__title {
@@ -990,7 +990,7 @@ img {
   border-radius: 4px; }
 
 .video {
-  background-image: url(../../img/video.png);
+  background-image: url(../img/video.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1001,7 +1001,7 @@ img {
   margin-bottom: 2.388rem; }
   @media (max-width: 768px) {
     .video {
-      background-image: url(../../img/video-mob.png);
+      background-image: url(../img/video-mob.png);
       margin: -3rem 0 1.388rem; } }
   .video__inner {
     padding: 221.994px 0 112.986px;
@@ -1088,7 +1088,7 @@ img {
   width: 100%; }
 
 .instruction {
-  background-image: url(../../img/instruction__bg-dev.png);
+  background-image: url(../img/instruction__bg-dev.png);
   background-repeat: no-repeat;
   background-size: 47% 100%;
   background-position: right center;
@@ -1098,7 +1098,7 @@ img {
   margin-bottom: 5.166rem; }
   @media (max-width: 768px) {
     .instruction {
-      background-image: url(../../img/instruction__bg-mob.png);
+      background-image: url(../img/instruction__bg-mob.png);
       background-position: bottom;
       background-size: 100% 100%;
       margin-bottom: 7.166rem; } }
@@ -1222,7 +1222,7 @@ img {
       margin-top: 0; } }
 
 .fit {
-  background-image: url(../../img/fit__bg.png);
+  background-image: url(../img/fit__bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1359,7 +1359,7 @@ img {
     filter: blur(6px); }
 
 .order {
-  background-image: url(../../img/order__bg.png);
+  background-image: url(../img/order__bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -1433,13 +1433,13 @@ img {
       margin-bottom: 1.388rem; } }
 
 .hero-footer {
-  background-image: url(../../img/hero__pancake.png), url(../../img/ero__bg.png);
+  background-image: url(../img/hero__pancake.png), url(../img/ero__bg.png);
   background-repeat: no-repeat;
   background-size: 27% auto, auto;
   background-position: left bottom, center top; }
   @media (max-width: 768px) {
     .hero-footer {
-      background-image: url(../../img/hero__bg-mob.png);
+      background-image: url(../img/hero__bg-mob.png);
       background-size: 100%;
       background-position: center top; } }
 
