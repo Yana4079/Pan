@@ -1,8 +1,8 @@
 .hero {
     background-image:  url(../../img/hero__pancake.png), url(../../img/ero__bg.png);
     background-repeat: no-repeat;
-    background-size:  27% auto, auto ;
-    background-position: left 87%, center top;
+    background-size:  27% auto, 100% ;
+    background-position: left 87%, center center;
     @include bp(768px) {
         background-image: url(../../img/hero__bg-mob.png);
         background-size: 100%;
@@ -23,12 +23,10 @@ padding: 0.53em 0 0.65em;
         width: 100%;
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         padding-bottom: 10rem;
-        margin-left: 8.777rem;
-        @include bp(1620px) {
-            margin-left: 1.777rem;
-          }
         &-img { 
+            flex: 0 1 50%;
             position: relative;
             max-width: 716px;
             @include bp(768px) {
@@ -43,6 +41,7 @@ padding: 0.53em 0 0.65em;
         }
         @include bp(768px) {
             margin-left: 0;
+            justify-content: flex-start;
           }
     }
 }
@@ -110,12 +109,12 @@ margin-top: 12rem;
               }
 }
 .promo {
+    flex: 0 1 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: $text-wt;
     max-width: 491px;
-    width: 100%;
     border-radius: 8px;
     align-self: center;
     @include bp (768px) {
@@ -135,7 +134,10 @@ margin: 0 auto;
     }
 
     .smile__box {
-        margin-top:-25px; 
+        margin-top:22px; 
+        @include bp (768px) {
+            margin-top:-25px; 
+          }
     }
     .promo__smile + .promo__smile {
         margin-top: 8px;
@@ -683,17 +685,13 @@ height: 55px;
     width: 100%;
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         padding-bottom: 10rem;
-        margin-left: 8.777rem;
-        margin-bottom: 3.388rem;
-    padding-bottom: 7.833rem;
-    @include bp(1620px) {
-        margin-left: 1.777rem;
-      }
     @include bp(768px) {
         margin-left: 0;
         padding-bottom: 0;
-        margin-bottom: 1.388rem;
+        margin-left: 0;
+        justify-content: flex-start;
       }  
       @include bp(480px) {
       
@@ -703,7 +701,7 @@ height: 55px;
 .hero-footer {
     background-image: url(../../img/hero__pancake.png), url(../../img/ero__bg.png);
     background-repeat: no-repeat;
-    background-size: 27% auto, auto ;
+    background-size: 27% auto, 100% ;
     background-position: left bottom, center top;
     @include bp(768px) {
         background-image: url(../../img/hero__bg-mob.png);
