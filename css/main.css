@@ -342,11 +342,13 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: relative; }
 
 .wrapper {
   max-width: 1920px;
-  margin: 0 auto;
   position: relative;
   min-width: 320px;
   min-height: 100vh;
