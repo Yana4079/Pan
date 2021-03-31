@@ -71,12 +71,10 @@
   flex-wrap: wrap;
   justify-content: $jc;
 }
-@mixin flex-col ($jc: space-between, $ai: center) {
+@mixin flex-between ($jc: space-between) {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
   justify-content: $jc;
-  align-items: $ai;
 }
 
 @mixin center($axis: 'both') {

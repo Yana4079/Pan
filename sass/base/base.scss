@@ -35,9 +35,31 @@ html {
       z-index: 1;
       @include bp(768px) {
         padding: 0 2.111rem;
+        max-width: 500px;
+      }
+      @include bp(480px) {
+        max-width: 1285px;
       }
     }
- 
+
+    .container__footer {
+      display: flex;
+      justify-content: space-between;
+      
+    }
+ .container-desc {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1285px;
+  z-index: 1;
+  @include bp(768px) {
+    padding: 0 2.111rem;
+    max-width: 500px;
+  }
+  @include bp(480px) {
+    max-width: 100%;
+  }
+ }
     
     img {
     display: inline-block;
@@ -61,6 +83,7 @@ html {
       text-transform: uppercase;
       @include bp(480px) {
         color: $text-wt;
+        background: $bg-price;
       }
     }
 
@@ -77,6 +100,9 @@ html {
       @include fFS(18px, 18px, 480px, 1920px, 18px);
       font-weight: 700;
       line-height: 1.22em;
+      @include bp(768px) {
+        text-align: center;
+      }
     }
     .instruction__text {
       font-weight: 400;
@@ -104,6 +130,9 @@ html {
       font-weight: 700;
       color: $color-counter-text;
       line-height: 1.333em;
+      @include bp (370px) {
+        font-size: 17px;
+              }
     }
     .price__before-text {
       @include fFS(38px, 38px, 480px, 1920px, 38px);
@@ -136,17 +165,55 @@ html {
         }
       }
     }
+    .row-footer {
+     display: flex;
+     flex-wrap: wrap;
+justify-content: space-between;
+      &--rewerse {
+        flex-direction: row-reverse;
+        @include bp(480px) {
+          flex-direction: row;
+        }
+      }
+    }
     
     .col {
       position: relative;
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
+      z-index: 1;
       flex: 0 1 50%;
          @include bp(768px) {
+        flex: 1 1 100%;
+        min-height: auto;
+        width: 100%;
+      }
+      &-33 {
+        flex: 0 1 33.333%;
+        
+        @include bp(768px) {
+         flex: 1 1 20% !important;
+         flex-wrap: wrap;
+         min-height: auto;
+       }
+       @include bp(480px) {
         flex: 1 1 100% !important;
+        flex-wrap: wrap;
         min-height: auto;
       }
-      
+      }
+      &-30 {
+        flex: 0 1 30%;
+        
+        @include bp(768px) {
+         flex: 1 1 100% !important;
+         flex-wrap: wrap;
+         min-height: auto;
+       }
+  
+      }
+   
        
         
      &-40 {
@@ -183,5 +250,6 @@ justify-content: center;
      }
     }
 
+  
 
     
