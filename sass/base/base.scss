@@ -57,7 +57,7 @@ width: 100%;
   z-index: 1;
   @include bp(768px) {
     padding: 0 2.111rem;
-    max-width: 500px;
+    max-width: 600px;
   }
   @include bp(480px) {
     max-width: 100%;

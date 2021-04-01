@@ -1,0 +1,32 @@
+.footer__block {
+    font-size: 0.8em;
+    margin-bottom: 1.8em; }
+    .footer__block:last-of-type {
+      margin-bottom: 0; }
+  
+  .footer__title {
+    font-weight: bold;
+    margin-bottom: 0.8em; }
+  
+  .footer__link li {
+    margin-bottom: 0.5em; }
+    .footer__link li:last-child {
+      margin-bottom: 0; }
+
+  
+  .copy {
+    font-size: 15px;
+    color: #CC6759;
+text-align: start; }
+  
+  .scale__progress,
+  .scale__fill {
+    height: 16px;
+    border-radius: 11px; }
+  
+  .scale__progress {
+    background: #e7d5ea; }
+  
+  .scale__fill {
+    background: #04b700; }
+  
