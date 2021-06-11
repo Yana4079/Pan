@@ -1,7 +1,7 @@
 html {
     font-family: $ff;
      color: $text;
-    @include fFS(18px, 18x, 480px, 1920px, 18px);
+    @include fFS(18px, 18px, 480px, 1920px, 18px);
      line-height: 1,2;
     }
     
@@ -20,6 +20,9 @@ width: 100%;
      min-height: 100vh;
      flex-grow: 1;
      overflow: hidden;
+     @include bp(480px) {
+      max-width: 480px;
+    }
     }
     
     .footer {
@@ -38,10 +41,10 @@ width: 100%;
       z-index: 1;
       @include bp(768px) {
         padding: 0 2.111rem;
-        max-width: 500px;
+        max-width: 425px;
       }
       @include bp(480px) {
-        max-width: 1285px;
+        max-width: 425px;
       }
     }
 
